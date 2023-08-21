@@ -141,7 +141,7 @@ function App() {
     return (
       <section
         className="mt-[5.063rem] bg-Dark_blue rounded-[0.938rem] 
-       xl:mt-[1.8rem] xl:row-span-2 md:row-span-1 md:col-span-2 xl:col-span-1 xl:max-w-[22.1rem] 2xl:max-w-none"
+       xl:mt-[0rem] xl:row-span-2 md:row-span-1 md:col-span-2 xl:col-span-1 xl:max-w-[22.1rem] 2xl:max-w-none"
       >
         <section
           className="bg-Blue p-[2.563rem] pl-[1.875rem]
@@ -152,7 +152,7 @@ function App() {
             src={profile_picture}
             alt="profile_picture"
             className="xl:border-[0.25rem] border-2 border-solid border-white rounded-full 
-          w-[3.75rem] lx:self-start xl:mb-[2.688rem] md:w-[7.5rem]"
+          w-[3rem] lx:self-start xl:mb-[2.688rem] md:w-[5.5rem]"
           />
           <div>
             <h3 className="text-Pale_Blue text-[0.938rem] font-normal ">
@@ -187,12 +187,9 @@ function App() {
   function WorkCard() {
     return (
       <section className="grid max-h-[18.2rem] xl:w-[15.9rem] ">
-        <div>
-          <div className="w-[100%] h-6 bg-[#0e1323] relative z-50"></div>
-        </div>
         <section
           className="flex justify-end items-center bg-Light_red_work
-         rounded-t-[0.938rem] z-[3] h-[5.38rem]"
+         rounded-t-[0.938rem] z-[3] h-[5.38rem] overflow-hidden"
         >
           <img
             src={workImage}
@@ -232,10 +229,7 @@ function App() {
   function PlayCard() {
     return (
       <section className="grid max-h-[18.2rem] xl:w-[15.9rem]">
-        <div>
-          <div className="w-[100%] h-6 bg-[#0e1323] relative z-50"></div>
-        </div>
-        <section className="flex justify-end items-center bg-Soft_blue__play rounded-t-[0.938rem] z-[3] h-[5.38rem]">
+        <section className="flex justify-end items-center bg-Soft_blue__play rounded-t-[0.938rem] z-[3] h-[5.38rem] overflow-hidden">
           <img
             src={playImage}
             alt="workImage"
@@ -271,10 +265,7 @@ function App() {
   function StudyCard() {
     return (
       <section className="grid max-h-[18.2rem] xl:w-[15.9rem]">
-        <div>
-          <div className="w-[100%] h-6 bg-[#0e1323] relative z-50"></div>
-        </div>
-        <section className="flex justify-end items-center bg-Light_red__study rounded-t-[0.938rem] z-[3] h-[5.38rem]">
+        <section className="flex justify-end items-center bg-Light_red__study rounded-t-[0.938rem] z-[3] h-[5.38rem] overflow-hidden">
           <img
             src={StudyImage}
             alt="workImage"
@@ -310,10 +301,7 @@ function App() {
   function ExerciseCard() {
     return (
       <section className="grid max-h-[18.2rem] xl:w-[15.9rem]">
-        <div>
-          <div className="w-[100%] h-6 bg-[#0e1323] relative z-50"></div>
-        </div>
-        <section className="flex justify-end items-center bg-Lime_green__exercise rounded-t-[0.938rem] z-[3] h-[5.38rem]">
+        <section className="flex justify-end items-center bg-Lime_green__exercise rounded-t-[0.938rem] z-[3] h-[5.38rem] overflow-hidden">
           <img
             src={ExerciseImage}
             alt="workImage"
@@ -349,10 +337,7 @@ function App() {
   function SocialCard() {
     return (
       <section className="grid max-h-[18.2rem] xl:w-[15.9rem]">
-        <div>
-          <div className="w-[100%] h-6 bg-[#0e1323] relative z-50"></div>
-        </div>
-        <section className="flex justify-end items-center bg-Violet__social rounded-t-[0.938rem] z-[3] h-[5.38rem]">
+        <section className="flex justify-end items-center bg-Violet__social rounded-t-[0.938rem] z-[3] h-[5.38rem] overflow-hidden">
           <img
             src={SocialImage}
             alt="workImage"
@@ -388,10 +373,7 @@ function App() {
   function SelfCareCard() {
     return (
       <section className="grid mb-[5.6rem] md:mb-[0rem] xl:w-[15.9rem]">
-        <div>
-          <div className="w-[100%] h-6 bg-[#0e1323] relative z-50"></div>
-        </div>
-        <section className="flex justify-end items-center bg-Soft_orange__self_care rounded-t-[0.938rem] z-[3] h-[5.38rem]">
+        <section className="flex justify-end items-center bg-Soft_orange__self_care rounded-t-[0.938rem] z-[3] h-[5.38rem] overflow-hidden">
           <img
             src={Self_careImage}
             alt="workImage"
