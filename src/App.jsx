@@ -140,19 +140,19 @@ function App() {
     }
     return (
       <section
-        className="mt-[81px] bg-Dark_blue rounded-[15px] 
+        className="mt-[5.063rem] bg-Dark_blue rounded-[0.938rem] 
        xl:mt-[1.8rem] xl:row-span-2 md:row-span-1 md:col-span-2 xl:col-span-1 xl:max-w-[22.1rem] 2xl:max-w-none"
       >
         <section
-          className="bg-Blue p-[41px] pl-[30px]
-       rounded-[15px] flex gap-x-[20px] xl:flex-col items-center xl:p-0 
-       xl:pl-[32px] xl:pr-[81px] xl:pt-[37px] xl:pb-[80px] xl:items-start"
+          className="bg-Blue p-[2.563rem] pl-[1.875rem]
+       rounded-[0.938rem] flex gap-x-[1.25rem] xl:flex-col items-center xl:p-0 
+       xl:pl-[2rem] xl:pr-[5.063rem] xl:pt-[2.313rem] xl:pb-[5rem] xl:items-start"
         >
           <img
             src={profile_picture}
             alt="profile_picture"
-            className="xl:border-4 border-2 border-solid border-white rounded-full 
-          w-[60px] lx:self-start xl:mb-[43px] md:w-[120px]"
+            className="xl:border-[0.25rem] border-2 border-solid border-white rounded-full 
+          w-[3.75rem] lx:self-start xl:mb-[2.688rem] md:w-[7.5rem]"
           />
           <div>
             <h3 className="text-Pale_Blue text-[0.938rem] font-normal ">
@@ -160,15 +160,15 @@ function App() {
             </h3>
             <h1
               className=" text-[1.5rem] font-light md:text-[2.5rem] 
-            xl:leading-[60px] xl:flex xl:flex-col"
+            xl:leading-[3.75rem] xl:flex xl:flex-col"
             >
               Jeremy <span>Robson</span>
             </h1>
           </div>
         </section>
-        <div
-          className="flex p-[26px] pb-[32px] justify-between 
-      xl:items-start  flex-wrap xl:flex-col  xl:gap-[21px] "
+        <section
+          className="flex p-[1.625rem] pb-[2rem] justify-between 
+      xl:items-start  flex-wrap xl:flex-col  xl:gap-[1.313rem] "
         >
           <button className={state.dailyBtnStyle} onClick={DailyBtn}>
             Daily
@@ -179,30 +179,30 @@ function App() {
           <button className={state.MonthlyBtnStyle} onClick={MonthlyBtn}>
             Monthly
           </button>
-        </div>
+        </section>
       </section>
     );
   }
 
   function WorkCard() {
     return (
-      <section className="grid max-h-[18.2rem] xl:w-[15.9rem] 2xl:w-[100%]">
+      <section className="grid max-h-[18.2rem] xl:w-[15.9rem] ">
         <div>
           <div className="w-[100%] h-6 bg-[#0e1323] relative z-50"></div>
         </div>
         <section
           className="flex justify-end items-center bg-Light_red_work
-         rounded-t-[15px] z-[3] h-[5.38rem]"
+         rounded-t-[0.938rem] z-[3] h-[5.38rem]"
         >
           <img
             src={workImage}
             alt="workImage"
-            className="mr-[17.5px] mt-[-10px] w-[5.5rem]"
+            className="mr-[1.094rem] mt-[-0.625rem] w-[5.5rem]"
           />
         </section>
         <section
-          className="bg-Dark_blue rounded-[15px] px-[24px] 
-      py-[28px] mt-[-30px] z-10 hover:bg-hover_color cursor-pointer"
+          className="bg-Dark_blue rounded-[0.938rem] px-[1.5rem] 
+      py-[1.75rem] mt-[-1.875rem] z-10 hover:bg-hover_color cursor-pointer"
         >
           <section className="flex justify-between flex-col">
             <div className="flex items-baseline justify-between">
@@ -235,16 +235,16 @@ function App() {
         <div>
           <div className="w-[100%] h-6 bg-[#0e1323] relative z-50"></div>
         </div>
-        <section className="flex justify-end items-center bg-Soft_blue__play rounded-t-[15px] z-[3] h-[5.38rem]">
+        <section className="flex justify-end items-center bg-Soft_blue__play rounded-t-[0.938rem] z-[3] h-[5.38rem]">
           <img
             src={playImage}
             alt="workImage"
-            className="mr-[17.5px] mt-[15px] w-[7rem]"
+            className="mr-[1.063rem] mt-[0.938rem] w-[7rem]"
           />
         </section>
         <section
-          className="bg-Dark_blue rounded-[15px] px-[24px] 
-      py-[28px] mt-[-30px] z-10 hover:bg-hover_color cursor-pointer"
+          className="bg-Dark_blue rounded-[0.938rem] px-[1.5rem] 
+      py-[1.75rem] mt-[-1.875rem] z-10 hover:bg-hover_color cursor-pointer"
         >
           <section className="flex justify-between flex-col">
             <div className="flex items-baseline justify-between">
@@ -274,16 +274,16 @@ function App() {
         <div>
           <div className="w-[100%] h-6 bg-[#0e1323] relative z-50"></div>
         </div>
-        <section className="flex justify-end items-center bg-Light_red__study rounded-t-[15px] z-[3] h-[5.38rem]">
+        <section className="flex justify-end items-center bg-Light_red__study rounded-t-[0.938rem] z-[3] h-[5.38rem]">
           <img
             src={StudyImage}
             alt="workImage"
-            className="mr-[17.5px] mt-[-10px] w-[6rem]"
+            className="mr-[1.094rem] mt-[-0.625rem] w-[6rem]"
           />
         </section>
         <section
-          className="bg-Dark_blue rounded-[15px] px-[24px] 
-      py-[28px] mt-[-30px] z-10 hover:bg-hover_color cursor-pointer"
+          className="bg-Dark_blue rounded-[0.938rem] px-[1.5rem] 
+      py-[1.75rem] mt-[-1.875rem] z-10 hover:bg-hover_color cursor-pointer"
         >
           <section className="flex justify-between flex-col">
             <div className="flex items-baseline justify-between">
@@ -313,16 +313,16 @@ function App() {
         <div>
           <div className="w-[100%] h-6 bg-[#0e1323] relative z-50"></div>
         </div>
-        <section className="flex justify-end items-center bg-Lime_green__exercise rounded-t-[15px] z-[3] h-[5.38rem]">
+        <section className="flex justify-end items-center bg-Lime_green__exercise rounded-t-[0.938rem] z-[3] h-[5.38rem]">
           <img
             src={ExerciseImage}
             alt="workImage"
-            className="mr-[17.5px] mt-[-10px] w-[7.5rem]"
+            className="mr-[1.094rem] mt-[-0.625rem] w-[7.5rem]"
           />
         </section>
         <section
-          className="bg-Dark_blue rounded-[15px] px-[24px] 
-      py-[28px] mt-[-30px] z-10 hover:bg-hover_color cursor-pointer"
+          className="bg-Dark_blue rounded-[0.938rem] px-[1.5rem] 
+      py-[1.75rem] mt-[-1.875rem] z-10 hover:bg-hover_color cursor-pointer"
         >
           <section className="flex justify-between flex-col">
             <div className="flex items-baseline justify-between">
@@ -352,16 +352,16 @@ function App() {
         <div>
           <div className="w-[100%] h-6 bg-[#0e1323] relative z-50"></div>
         </div>
-        <section className="flex justify-end items-center bg-Violet__social rounded-t-[15px] z-[3] h-[5.38rem]">
+        <section className="flex justify-end items-center bg-Violet__social rounded-t-[0.938rem] z-[3] h-[5.38rem]">
           <img
             src={SocialImage}
             alt="workImage"
-            className="mr-[17.5px] mt-[3px] w-[5.7rem]"
+            className="mr-[1.094rem] mt-[0.188rem] w-[5.7rem]"
           />
         </section>
         <section
-          className="bg-Dark_blue rounded-[15px] px-[24px] 
-      py-[28px] mt-[-30px] z-10 hover:bg-hover_color cursor-pointer"
+          className="bg-Dark_blue rounded-[0.938rem] px-[1.5rem] 
+      py-[1.75rem] mt-[-1.875rem] z-10 hover:bg-hover_color cursor-pointer"
         >
           <section className="flex justify-between flex-col">
             <div className="flex items-baseline justify-between">
@@ -391,16 +391,16 @@ function App() {
         <div>
           <div className="w-[100%] h-6 bg-[#0e1323] relative z-50"></div>
         </div>
-        <section className="flex justify-end items-center bg-Soft_orange__self_care rounded-t-[15px] z-[3] h-[5.38rem]">
+        <section className="flex justify-end items-center bg-Soft_orange__self_care rounded-t-[0.938rem] z-[3] h-[5.38rem]">
           <img
             src={Self_careImage}
             alt="workImage"
-            className="mr-[17.5px] mt-[-10px] w-[6rem]"
+            className="mr-[1.094rem] mt-[-0.625rem] w-[6rem]"
           />
         </section>
         <section
-          className="bg-Dark_blue rounded-[15px] px-[24px] 
-      py-[28px] mt-[-30px] z-10 hover:bg-hover_color cursor-pointer"
+          className="bg-Dark_blue rounded-[0.938rem] px-[1.5rem] 
+      py-[1.75rem] mt-[-1.875rem] z-10 hover:bg-hover_color cursor-pointer"
         >
           <section className="flex justify-between flex-col">
             <div className="flex items-baseline justify-between">
@@ -428,7 +428,7 @@ function App() {
     <article className="xl:flex xl:justify-center xl:items-center xl:h-screen">
       <main
         className="mr-6 ml-6 md:flex md:flex-col xl:flex-row xl:justify-center
-       xl:items-center md:gap-5 xl:max-w-[1440px] "
+       xl:items-center md:gap-5 xl:max-w-[90rem]"
       >
         <ProfileCard />
         <div
