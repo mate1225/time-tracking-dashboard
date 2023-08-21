@@ -8,7 +8,6 @@ import StudyImage from "./assets/images/icon-study.svg";
 import ExerciseImage from "./assets/images/icon-exercise.svg";
 import SocialImage from "./assets/images/icon-social.svg";
 import Self_careImage from "./assets/images/icon-self-care.svg";
-/* import DisplayData from "./DisplayData.jsx"; */
 import data from "./assets/data.json";
 import BigHourCount from "./components/BigHourCount";
 import CardBody from "./components/CardBody";
@@ -145,35 +144,35 @@ function App() {
     }
     return (
       <section
-        className="mt-[5.063rem] bg-Dark_blue rounded-[0.938rem] 
-       xl:mt-[0rem] xl:row-span-2 md:row-span-1 md:col-span-2 xl:col-span-1 xl:max-w-[22.1rem] 2xl:max-w-none"
+        className="mt-[5.063rem] rounded-[0.938rem] bg-Dark_blue 
+       md:col-span-2 md:row-span-1 xl:col-span-1 xl:row-span-2 xl:mt-[0rem] xl:max-w-[22.1rem] 2xl:max-w-none"
       >
         <section
-          className="bg-Blue p-[2.563rem] pl-[1.875rem]
-       rounded-[0.938rem] flex gap-x-[1.25rem] xl:flex-col items-center xl:p-0 
-       xl:pl-[2rem] xl:pr-[5.063rem] xl:pt-[2.313rem] xl:pb-[5rem] xl:items-start"
+          className="flex items-center gap-x-[1.25rem]
+       rounded-[0.938rem] bg-Blue p-[2.563rem] pl-[1.875rem] xl:flex-col xl:items-start 
+       xl:p-0 xl:pb-[5rem] xl:pl-[2rem] xl:pr-[5.063rem] xl:pt-[2.313rem]"
         >
           <img
             src={profile_picture}
             alt="profile_picture"
-            className="xl:border-[0.25rem] border-2 border-solid border-white rounded-full 
-          w-[3rem] lx:self-start xl:mb-[2.688rem] md:w-[5.5rem]"
+            className="lx:self-start w-[3rem] rounded-full border-2 border-solid 
+          border-white md:w-[5.5rem] xl:mb-[2.688rem] xl:border-[0.25rem]"
           />
           <div>
-            <h3 className="text-Pale_Blue text-[0.938rem] font-normal ">
+            <h3 className="text-[0.938rem] font-normal text-Pale_Blue ">
               Report for
             </h3>
             <h1
               className=" text-[1.5rem] font-light md:text-[2.5rem] 
-            xl:leading-[3.75rem] xl:flex xl:flex-col"
+            xl:flex xl:flex-col xl:leading-[3.75rem]"
             >
               Jeremy <span>Robson</span>
             </h1>
           </div>
         </section>
         <section
-          className="flex p-[1.625rem] pb-[2rem] justify-between 
-      xl:items-start  flex-wrap xl:flex-col  xl:gap-[1.313rem] "
+          className="flex flex-wrap justify-between p-[1.625rem] 
+      pb-[2rem]  xl:flex-col xl:items-start  xl:gap-[1.313rem] "
         >
           <button className={state.dailyBtnStyle} onClick={DailyBtn}>
             Daily
@@ -205,7 +204,7 @@ function App() {
   function PlayCard() {
     return (
       <section className="grid max-h-[18.2rem] xl:w-[15.9rem]">
-        <section className="flex justify-end items-center bg-Soft_blue__play rounded-t-[0.938rem] z-[3] h-[5.38rem] overflow-hidden">
+        <section className="z-[3] flex h-[5.38rem] items-center justify-end overflow-hidden rounded-t-[0.938rem] bg-Soft_blue__play">
           <img
             src={playImage}
             alt="workImage"
@@ -213,19 +212,19 @@ function App() {
           />
         </section>
         <section
-          className="bg-Dark_blue rounded-[0.938rem] px-[1.5rem] 
-      py-[1.75rem] mt-[-1.875rem] z-10 hover:bg-hover_color cursor-pointer"
+          className="z-10 mt-[-1.875rem] cursor-pointer 
+      rounded-[0.938rem] bg-Dark_blue px-[1.5rem] py-[1.75rem] hover:bg-hover_color"
         >
-          <section className="flex justify-between flex-col">
+          <section className="flex flex-col justify-between">
             <div className="flex items-baseline justify-between">
               <h2 className="font-medium">Play</h2>
-              <button className="rounded-full flex gap-1 cursor-pointer">
-                <div className="w-2 h-2 bg-Pale_Blue rounded-full"></div>
-                <div className="w-2 h-2 bg-Pale_Blue rounded-full"></div>
-                <div className="w-2 h-2 bg-Pale_Blue rounded-full"></div>
+              <button className="flex cursor-pointer gap-1 rounded-full">
+                <div className="h-2 w-2 rounded-full bg-Pale_Blue"></div>
+                <div className="h-2 w-2 rounded-full bg-Pale_Blue"></div>
+                <div className="h-2 w-2 rounded-full bg-Pale_Blue"></div>
               </button>
             </div>
-            <div className="flex items-center justify-between xl:flex-col xl:items-start xl:justify-normal  xl:mt-6">
+            <div className="flex items-center justify-between xl:mt-6 xl:flex-col xl:items-start  xl:justify-normal">
               <BigHourCount currentTime={state.play_currentTime} />
               <h5 className="text-Pale_Blue ">
                 Last {state.time_interval} - {state.play_previousTime}hrs
@@ -239,7 +238,7 @@ function App() {
   function StudyCard() {
     return (
       <section className="grid max-h-[18.2rem] xl:w-[15.9rem]">
-        <section className="flex justify-end items-center bg-Light_red__study rounded-t-[0.938rem] z-[3] h-[5.38rem] overflow-hidden">
+        <section className="z-[3] flex h-[5.38rem] items-center justify-end overflow-hidden rounded-t-[0.938rem] bg-Light_red__study">
           <img
             src={StudyImage}
             alt="workImage"
@@ -247,19 +246,19 @@ function App() {
           />
         </section>
         <section
-          className="bg-Dark_blue rounded-[0.938rem] px-[1.5rem] 
-      py-[1.75rem] mt-[-1.875rem] z-10 hover:bg-hover_color cursor-pointer"
+          className="z-10 mt-[-1.875rem] cursor-pointer 
+      rounded-[0.938rem] bg-Dark_blue px-[1.5rem] py-[1.75rem] hover:bg-hover_color"
         >
-          <section className="flex justify-between flex-col">
+          <section className="flex flex-col justify-between">
             <div className="flex items-baseline justify-between">
               <h2 className="font-medium">Study</h2>
-              <div className="flex gap-1 cursor-pointer">
-                <div className="w-2 h-2 bg-Pale_Blue rounded-full"></div>
-                <div className="w-2 h-2 bg-Pale_Blue rounded-full"></div>
-                <div className="w-2 h-2 bg-Pale_Blue rounded-full"></div>
+              <div className="flex cursor-pointer gap-1">
+                <div className="h-2 w-2 rounded-full bg-Pale_Blue"></div>
+                <div className="h-2 w-2 rounded-full bg-Pale_Blue"></div>
+                <div className="h-2 w-2 rounded-full bg-Pale_Blue"></div>
               </div>
             </div>
-            <div className="flex items-center justify-between xl:flex-col xl:items-start xl:justify-normal  xl:mt-6">
+            <div className="flex items-center justify-between xl:mt-6 xl:flex-col xl:items-start  xl:justify-normal">
               <BigHourCount currentTime={state.study_currentTime} />
               <h5 className="text-Pale_Blue ">
                 Last {state.time_interval} - {state.study_previousTime}hrs
@@ -273,7 +272,7 @@ function App() {
   function ExerciseCard() {
     return (
       <section className="grid max-h-[18.2rem] xl:w-[15.9rem]">
-        <section className="flex justify-end items-center bg-Lime_green__exercise rounded-t-[0.938rem] z-[3] h-[5.38rem] overflow-hidden">
+        <section className="z-[3] flex h-[5.38rem] items-center justify-end overflow-hidden rounded-t-[0.938rem] bg-Lime_green__exercise">
           <img
             src={ExerciseImage}
             alt="workImage"
@@ -281,19 +280,19 @@ function App() {
           />
         </section>
         <section
-          className="bg-Dark_blue rounded-[0.938rem] px-[1.5rem] 
-      py-[1.75rem] mt-[-1.875rem] z-10 hover:bg-hover_color cursor-pointer"
+          className="z-10 mt-[-1.875rem] cursor-pointer 
+      rounded-[0.938rem] bg-Dark_blue px-[1.5rem] py-[1.75rem] hover:bg-hover_color"
         >
-          <section className="flex justify-between flex-col">
+          <section className="flex flex-col justify-between">
             <div className="flex items-baseline justify-between">
               <h2 className="font-medium">Exercise</h2>
-              <div className="flex gap-1 cursor-pointer">
-                <div className="w-2 h-2 bg-Pale_Blue rounded-full"></div>
-                <div className="w-2 h-2 bg-Pale_Blue rounded-full"></div>
-                <div className="w-2 h-2 bg-Pale_Blue rounded-full"></div>
+              <div className="flex cursor-pointer gap-1">
+                <div className="h-2 w-2 rounded-full bg-Pale_Blue"></div>
+                <div className="h-2 w-2 rounded-full bg-Pale_Blue"></div>
+                <div className="h-2 w-2 rounded-full bg-Pale_Blue"></div>
               </div>
             </div>
-            <div className="flex items-center justify-between xl:flex-col xl:items-start xl:justify-normal  xl:mt-6">
+            <div className="flex items-center justify-between xl:mt-6 xl:flex-col xl:items-start  xl:justify-normal">
               <BigHourCount currentTime={state.Exercise_currentTime} />
               <h5 className="text-Pale_Blue ">
                 Last {state.time_interval} - {state.Exercise_previousTime}hrs
@@ -307,7 +306,7 @@ function App() {
   function SocialCard() {
     return (
       <section className="grid max-h-[18.2rem] xl:w-[15.9rem]">
-        <section className="flex justify-end items-center bg-Violet__social rounded-t-[0.938rem] z-[3] h-[5.38rem] overflow-hidden">
+        <section className="z-[3] flex h-[5.38rem] items-center justify-end overflow-hidden rounded-t-[0.938rem] bg-Violet__social">
           <img
             src={SocialImage}
             alt="workImage"
@@ -315,19 +314,19 @@ function App() {
           />
         </section>
         <section
-          className="bg-Dark_blue rounded-[0.938rem] px-[1.5rem] 
-      py-[1.75rem] mt-[-1.875rem] z-10 hover:bg-hover_color cursor-pointer"
+          className="z-10 mt-[-1.875rem] cursor-pointer 
+      rounded-[0.938rem] bg-Dark_blue px-[1.5rem] py-[1.75rem] hover:bg-hover_color"
         >
-          <section className="flex justify-between flex-col">
+          <section className="flex flex-col justify-between">
             <div className="flex items-baseline justify-between">
               <h2 className="font-medium">Social</h2>
-              <div className="flex gap-1 cursor-pointer">
-                <div className="w-2 h-2 bg-Pale_Blue rounded-full"></div>
-                <div className="w-2 h-2 bg-Pale_Blue rounded-full"></div>
-                <div className="w-2 h-2 bg-Pale_Blue rounded-full"></div>
+              <div className="flex cursor-pointer gap-1">
+                <div className="h-2 w-2 rounded-full bg-Pale_Blue"></div>
+                <div className="h-2 w-2 rounded-full bg-Pale_Blue"></div>
+                <div className="h-2 w-2 rounded-full bg-Pale_Blue"></div>
               </div>
             </div>
-            <div className="flex items-center justify-between xl:flex-col xl:items-start xl:justify-normal  xl:mt-6">
+            <div className="flex items-center justify-between xl:mt-6 xl:flex-col xl:items-start  xl:justify-normal">
               <BigHourCount currentTime={state.Social_currentTime} />
               <h5 className="text-Pale_Blue ">
                 Last {state.time_interval} - {state.Social_previousTime}hrs
@@ -340,8 +339,8 @@ function App() {
   }
   function SelfCareCard() {
     return (
-      <section className="grid mb-[5.6rem] md:mb-[0rem] xl:w-[15.9rem]">
-        <section className="flex justify-end items-center bg-Soft_orange__self_care rounded-t-[0.938rem] z-[3] h-[5.38rem] overflow-hidden">
+      <section className="mb-[5.6rem] grid md:mb-[0rem] xl:w-[15.9rem]">
+        <section className="z-[3] flex h-[5.38rem] items-center justify-end overflow-hidden rounded-t-[0.938rem] bg-Soft_orange__self_care">
           <img
             src={Self_careImage}
             alt="workImage"
@@ -349,19 +348,19 @@ function App() {
           />
         </section>
         <section
-          className="bg-Dark_blue rounded-[0.938rem] px-[1.5rem] 
-      py-[1.75rem] mt-[-1.875rem] z-10 hover:bg-hover_color cursor-pointer"
+          className="z-10 mt-[-1.875rem] cursor-pointer 
+      rounded-[0.938rem] bg-Dark_blue px-[1.5rem] py-[1.75rem] hover:bg-hover_color"
         >
-          <section className="flex justify-between flex-col">
+          <section className="flex flex-col justify-between">
             <div className="flex items-baseline justify-between">
               <h2 className="font-medium">Self Care</h2>
-              <div className="flex gap-1 cursor-pointer">
-                <div className="w-2 h-2 bg-Pale_Blue rounded-full"></div>
-                <div className="w-2 h-2 bg-Pale_Blue rounded-full"></div>
-                <div className="w-2 h-2 bg-Pale_Blue rounded-full"></div>
+              <div className="flex cursor-pointer gap-1">
+                <div className="h-2 w-2 rounded-full bg-Pale_Blue"></div>
+                <div className="h-2 w-2 rounded-full bg-Pale_Blue"></div>
+                <div className="h-2 w-2 rounded-full bg-Pale_Blue"></div>
               </div>
             </div>
-            <div className="flex items-center justify-between xl:flex-col xl:items-start xl:justify-normal  xl:mt-6">
+            <div className="flex items-center justify-between xl:mt-6 xl:flex-col xl:items-start  xl:justify-normal">
               <BigHourCount currentTime={state.SelfCare_currentTime} />
               <h5 className="text-Pale_Blue ">
                 Last {state.time_interval} - {state.SelfCare_previousTime}hrs
@@ -373,15 +372,15 @@ function App() {
     );
   }
   return (
-    <article className="xl:flex xl:justify-center xl:items-center xl:h-screen">
+    <article className="xl:flex xl:h-screen xl:items-center xl:justify-center">
       <main
-        className="mr-6 ml-6 md:flex md:flex-col xl:flex-row xl:justify-center
-       xl:items-center md:gap-5 xl:max-w-[90rem]"
+        className="ml-6 mr-6 md:flex md:flex-col md:gap-5 xl:max-w-[90rem]
+       xl:flex-row xl:items-center xl:justify-center"
       >
         <ProfileCard />
         <div
-          className="md:grid md:grid-cols-2 md:grid-rows-4 md:gap-[1.87rem] 
-        xl:grid-cols-3 xl:grid-rows-2 md:items-center "
+          className="md:grid md:grid-cols-2 md:grid-rows-4 md:items-center 
+        md:gap-[1.87rem] xl:grid-cols-3 xl:grid-rows-2 "
         >
           <WorkCard />
           <PlayCard />
