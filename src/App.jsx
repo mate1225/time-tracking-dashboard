@@ -10,6 +10,10 @@ import SocialImage from "./assets/images/icon-social.svg";
 import Self_careImage from "./assets/images/icon-self-care.svg";
 /* import DisplayData from "./DisplayData.jsx"; */
 import data from "./assets/data.json";
+import BigHourCount from "./components/BigHourCount";
+import CardBody from "./components/CardBody";
+import CardImage from "./components/CardImage";
+import CardWrapper from "./components/CardWrapper";
 //data selectors
 const Work = data[0].timeframes;
 const Play = data[1].timeframes;
@@ -17,6 +21,7 @@ const Study = data[2].timeframes;
 const Exercise = data[3].timeframes;
 const Social = data[4].timeframes;
 const Self_Care = data[5].timeframes;
+
 function App() {
   const [state, setState] = useState({
     //btn style
@@ -186,44 +191,15 @@ function App() {
 
   function WorkCard() {
     return (
-      <section className="grid max-h-[18.2rem] xl:w-[15.9rem] ">
-        <section
-          className="flex justify-end items-center bg-Light_red_work
-         rounded-t-[0.938rem] z-[3] h-[5.38rem] overflow-hidden"
-        >
-          <img
-            src={workImage}
-            alt="workImage"
-            className="mr-[1.094rem] mt-[-0.625rem] w-[5.5rem]"
-          />
-        </section>
-        <section
-          className="bg-Dark_blue rounded-[0.938rem] px-[1.5rem] 
-      py-[1.75rem] mt-[-1.875rem] z-10 hover:bg-hover_color cursor-pointer"
-        >
-          <section className="flex justify-between flex-col">
-            <div className="flex items-baseline justify-between">
-              <h2 className="font-medium">Work</h2>
-              <div className="flex gap-1 cursor-pointer">
-                <div className="w-2 h-2 bg-Pale_Blue rounded-full"></div>
-                <div className="w-2 h-2 bg-Pale_Blue rounded-full"></div>
-                <div className="w-2 h-2 bg-Pale_Blue rounded-full"></div>
-              </div>
-            </div>
-            <div
-              className="flex items-center justify-between xl:flex-col 
-            xl:items-start xl:justify-normal xl:mt-6 "
-            >
-              <h3 className=" text-[2rem] font-light xl:text-[3.5rem]">
-                {state.Work_currentTime}hrs
-              </h3>
-              <h5 className="text-Pale_Blue ">
-                Last {state.time_interval} - {state.work_previousTime}hrs
-              </h5>
-            </div>
-          </section>
-        </section>
-      </section>
+      <CardWrapper>
+        <CardImage image={workImage} />
+        <CardBody
+          title="Work"
+          currentTime={state.Work_currentTime}
+          interval={state.time_interval}
+          time={state.work_previousTime}
+        />
+      </CardWrapper>
     );
   }
   function PlayCard() {
@@ -250,9 +226,7 @@ function App() {
               </button>
             </div>
             <div className="flex items-center justify-between xl:flex-col xl:items-start xl:justify-normal  xl:mt-6">
-              <h3 className=" text-[2rem] font-light xl:text-[3.5rem]">
-                {state.play_currentTime}hrs
-              </h3>
+              <BigHourCount currentTime={state.play_currentTime} />
               <h5 className="text-Pale_Blue ">
                 Last {state.time_interval} - {state.play_previousTime}hrs
               </h5>
@@ -286,9 +260,7 @@ function App() {
               </div>
             </div>
             <div className="flex items-center justify-between xl:flex-col xl:items-start xl:justify-normal  xl:mt-6">
-              <h3 className=" text-[2rem] font-light xl:text-[3.5rem]">
-                {state.study_currentTime}hrs
-              </h3>
+              <BigHourCount currentTime={state.study_currentTime} />
               <h5 className="text-Pale_Blue ">
                 Last {state.time_interval} - {state.study_previousTime}hrs
               </h5>
@@ -322,9 +294,7 @@ function App() {
               </div>
             </div>
             <div className="flex items-center justify-between xl:flex-col xl:items-start xl:justify-normal  xl:mt-6">
-              <h3 className=" text-[2rem] font-light xl:text-[3.5rem]">
-                {state.Exercise_currentTime}hrs
-              </h3>
+              <BigHourCount currentTime={state.Exercise_currentTime} />
               <h5 className="text-Pale_Blue ">
                 Last {state.time_interval} - {state.Exercise_previousTime}hrs
               </h5>
@@ -358,9 +328,7 @@ function App() {
               </div>
             </div>
             <div className="flex items-center justify-between xl:flex-col xl:items-start xl:justify-normal  xl:mt-6">
-              <h3 className=" text-[2rem] font-light xl:text-[3.5rem]">
-                {state.Social_currentTime}hrs
-              </h3>
+              <BigHourCount currentTime={state.Social_currentTime} />
               <h5 className="text-Pale_Blue ">
                 Last {state.time_interval} - {state.Social_previousTime}hrs
               </h5>
@@ -394,9 +362,7 @@ function App() {
               </div>
             </div>
             <div className="flex items-center justify-between xl:flex-col xl:items-start xl:justify-normal  xl:mt-6">
-              <h3 className=" text-[2rem] font-light xl:text-[3.5rem]">
-                {state.SelfCare_currentTime}hrs
-              </h3>
+              <BigHourCount currentTime={state.SelfCare_currentTime} />
               <h5 className="text-Pale_Blue ">
                 Last {state.time_interval} - {state.SelfCare_previousTime}hrs
               </h5>
