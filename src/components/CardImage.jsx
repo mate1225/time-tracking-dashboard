@@ -1,14 +1,15 @@
-export default function CardImage({ image }) {
+export default function CardImage(props) {
+  const { bgColor, image } = props;
   return (
     <section
-      className="flex justify-end items-center bg-Light_red_work
- rounded-t-[0.938rem] z-[3] h-[5.38rem] overflow-hidden"
+      className={`z-[3] flex h-[5.38rem] items-center justify-end overflow-hidden rounded-t-[0.938rem] ${bgColor}`}
     >
       <img
         src={image}
         alt="workImage"
-        className="mr-[1.094rem] mt-[-0.625rem] w-[5.5rem]"
+        className="mr-[1.094rem] mt-[-0.625rem] w-[7rem]"
       />
     </section>
   );
 }
+//className="z-[3] flex h-[5.38rem] items-center justify-end overflow-hidden rounded-t-[0.938rem] bg-Light_red_work"

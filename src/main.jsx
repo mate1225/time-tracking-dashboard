@@ -7,6 +7,5 @@ import NewApp from "./NewApp.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
-    <NewApp />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

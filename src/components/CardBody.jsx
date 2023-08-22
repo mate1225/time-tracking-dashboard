@@ -3,21 +3,21 @@ import BigHourCount from "./BigHourCount";
 import CardHeader from "./CardHeader";
 
 export default function CardBody(props) {
-  const { title, interval, currentTime, time } = props;
+  const { title, interval, currentTime, previousTime } = props;
 
   return (
     <section
-      className="bg-Dark_blue rounded-[0.938rem] px-[1.5rem] 
-py-[1.75rem] mt-[-1.875rem] z-10 hover:bg-hover_color cursor-pointer"
+      className="z-10 mt-[-1.875rem] cursor-pointer 
+rounded-[0.938rem] bg-Dark_blue px-[1.5rem] py-[1.75rem] hover:bg-hover_color"
     >
-      <section className="flex justify-between flex-col">
+      <section className="flex flex-col justify-between">
         <CardHeader title={title} />
         <div
-          className="flex items-center justify-between xl:flex-col 
-    xl:items-start xl:justify-normal xl:mt-6 "
+          className="flex items-center justify-between xl:mt-6 
+    xl:flex-col xl:items-start xl:justify-normal "
         >
           <BigHourCount currentTime={currentTime} />
-          <AggregateCount interval={interval} time={time} />
+          <AggregateCount interval={interval} time={previousTime} />
         </div>
       </section>
     </section>
