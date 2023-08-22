@@ -12,4 +12,3 @@ export default function CardImage(props) {
     </section>
   );
 }
-//className="z-[3] flex h-[5.38rem] items-center justify-end overflow-hidden rounded-t-[0.938rem] bg-Light_red_work"
